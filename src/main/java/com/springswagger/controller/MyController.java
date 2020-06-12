@@ -20,8 +20,8 @@ public class MyController {
 
     @GetMapping("/")
     @ApiOperation(value = "访问网站首页", notes = "网站首页")
-    public void index() {
-
+    public String index() {
+        return "welcome";
     }
 
     @GetMapping(value = "/mi", produces = "application/json")
