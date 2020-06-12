@@ -26,8 +26,8 @@ public class MyController {
 
     @GetMapping(value = "/mi", produces = "application/json")
     @ApiImplicitParam(name = "num", value = "数字", required = true, dataType = "int", paramType = "query")
-    @ApiOperation(value = "获取用户详细信息", notes = "根据id来获取用户详细信息")
-    public int getUser(@RequestParam int num) {
+    @ApiOperation(value = "求一个数的平方", notes = "求一个数的平方的运算")
+    public int getNum2(@RequestParam int num) {
         return num*num;
     }
 }
